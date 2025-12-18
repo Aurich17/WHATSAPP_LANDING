@@ -1,22 +1,32 @@
 ---
 import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
 import Hero from "../components/Hero.astro";
 import Problem from "../components/Problem.astro";
 import Solution from "../components/Solution.astro";
 import HowItWorks from "../components/HowItWorks.astro";
 import Pricing from "../components/Pricing.astro";
+import FAQ from "../components/FAQ.astro";
 import CTA from "../components/CTA.astro";
+import Footer from "../components/Footer.astro";
+import FloatingWhatsApp from "../components/FloatingWhatsApp.astro";
 ---
 
 <html lang="es" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     
     <!-- SEO Principal -->
-    <title>Automatiza tu WhatsApp Business en Perú | Respuestas 24/7</title>
-    <meta name="description" content="Automatiza tu WhatsApp Business en Perú. Responde a tus clientes 24/7, incrementa ventas y ahorra tiempo con nuestros chatbots. Configuración en soles o dólares." />
-    <meta name="keywords" content="automatizacion whatsapp peru, chatbot whatsapp peru, bot whatsapp lima, respuestas automaticas whatsapp, vender por whatsapp peru, whatsapp business api" />
+    <title>Chatbot WhatsApp Perú | Vende en Automático las 24/7</title>
+    <meta name="description" content="¿Pierdes clientes por no responder? Automatiza tu WhatsApp Business hoy. Nuestro Bot atiende, vende y agenda por ti las 24 horas. ¡Implementación en Perú!" />
+    <meta name="keywords" content="chatbot whatsapp peru, automatizacion whatsapp, bot ventas whatsapp, whatsapp business api peru, respuestas automaticas, robot whatsapp" />
     <meta name="author" content="WhatsApp Automation" />
     <meta name="geo.region" content="PE" />
     <meta name="geo.placename" content="Peru" />
@@ -67,12 +77,16 @@ import CTA from "../components/CTA.astro";
     </script>
   </head>
   <body class="bg-[#0a0a0a] text-white font-sans antialiased overflow-x-hidden relative selection:bg-green-500/30 selection:text-green-200">
+    <Navbar />
     <div class="fixed inset-0 z-[-1] h-full w-full bg-[#0a0a0a] bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(34,197,94,0.15),rgba(255,255,255,0))]"></div>
     <Hero />
     <Problem />
     <Solution />
     <HowItWorks />
     <Pricing />
+    <FAQ />
     <CTA />
+    <Footer />
+    <FloatingWhatsApp />
   </body>
 </html>

@@ -1,0 +1,107 @@
+---
+---
+<section id="faq" class="py-24 relative overflow-hidden">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-5xl font-bold mb-6">
+        Preguntas Frecuentes
+      </h2>
+      <p class="text-gray-400 text-lg">
+        Todo lo que necesitas saber antes de empezar.
+      </p>
+    </div>
+
+    <div class="space-y-4">
+      <!-- FAQ Item 1 -->
+      <div class="group">
+        <button class="flex items-center justify-between w-full p-6 text-left bg-white/5 border border-white/5 rounded-2xl hover:bg-white/10 transition-all duration-300 focus:outline-none faq-btn">
+          <span class="text-lg font-medium pr-8">¿Necesito tener WhatsApp Business?</span>
+          <svg class="w-6 h-6 text-green-500 transform transition-transform duration-300 faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out faq-content opacity-50">
+          <div class="p-6 pt-2 text-gray-400 leading-relaxed">
+            Sí, es recomendable tener WhatsApp Business instalado. Si aún no lo tienes, nosotros te ayudamos a migrar tu número personal a Business sin perder tus chats.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="group">
+        <button class="flex items-center justify-between w-full p-6 text-left bg-white/5 border border-white/5 rounded-2xl hover:bg-white/10 transition-all duration-300 focus:outline-none faq-btn">
+          <span class="text-lg font-medium pr-8">¿Puedo responder yo mismo si quiero?</span>
+          <svg class="w-6 h-6 text-green-500 transform transition-transform duration-300 faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out faq-content opacity-50">
+          <div class="p-6 pt-2 text-gray-400 leading-relaxed">
+            ¡Por supuesto! El bot es tu asistente, no tu reemplazo. Puedes intervenir en cualquier conversación en cualquier momento. De hecho, el sistema te notificará cuando un cliente pida hablar con un humano.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="group">
+        <button class="flex items-center justify-between w-full p-6 text-left bg-white/5 border border-white/5 rounded-2xl hover:bg-white/10 transition-all duration-300 focus:outline-none faq-btn">
+          <span class="text-lg font-medium pr-8">¿Cuánto tiempo toma la configuración?</span>
+          <svg class="w-6 h-6 text-green-500 transform transition-transform duration-300 faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out faq-content opacity-50">
+          <div class="p-6 pt-2 text-gray-400 leading-relaxed">
+            Generalmente, dejamos todo listo en 24 a 48 horas. Incluimos una sesión de capacitación para que aprendas a sacarle el máximo provecho a tu nuevo bot.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 4 -->
+      <div class="group">
+        <button class="flex items-center justify-between w-full p-6 text-left bg-white/5 border border-white/5 rounded-2xl hover:bg-white/10 transition-all duration-300 focus:outline-none faq-btn">
+          <span class="text-lg font-medium pr-8">¿Qué pasa si no me gusta el servicio?</span>
+          <svg class="w-6 h-6 text-green-500 transform transition-transform duration-300 faq-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out faq-content opacity-50">
+          <div class="p-6 pt-2 text-gray-400 leading-relaxed">
+            Tenemos una garantía de satisfacción total. Si en los primeros 7 días sientes que no es para ti, te devolvemos tu dinero sin preguntas.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const faqBtns = document.querySelectorAll('.faq-btn');
+
+  faqBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const content = btn.nextElementSibling as HTMLElement;
+      const icon = btn.querySelector('.faq-icon') as HTMLElement;
+      
+      if (!content || !icon) return;
+
+      // Toggle current item
+      const isExpanded = content.style.maxHeight && content.style.maxHeight !== '0px';
+      
+      // Close all others
+      document.querySelectorAll('.faq-content').forEach((c) => {
+        (c as HTMLElement).style.maxHeight = '0px';
+        c.classList.add('opacity-50');
+      });
+      document.querySelectorAll('.faq-icon').forEach((i) => {
+        (i as HTMLElement).style.transform = 'rotate(0deg)';
+      });
+
+      if (!isExpanded) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        content.classList.remove('opacity-50');
+        icon.style.transform = 'rotate(180deg)';
+      }
+    });
+  });
+</script>
