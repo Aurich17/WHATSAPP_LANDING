@@ -60,6 +60,7 @@
 
   // Scroll effect
   window.addEventListener('scroll', () => {
+    if (!navbarBg) return;
     if (window.scrollY > 20) {
       navbarBg.classList.remove('opacity-0');
     } else {
@@ -69,12 +70,13 @@
 
   // Mobile menu
   function toggleMenu() {
+    if (!mobileMenu) return;
     mobileMenu.classList.toggle('translate-x-full');
     document.body.classList.toggle('overflow-hidden');
   }
 
-  menuBtn.addEventListener('click', toggleMenu);
-  closeBtn.addEventListener('click', toggleMenu);
+  if (menuBtn) menuBtn.addEventListener('click', toggleMenu);
+  if (closeBtn) closeBtn.addEventListener('click', toggleMenu);
   
   mobileLinks.forEach(link => {
     link.addEventListener('click', toggleMenu);
