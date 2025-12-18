@@ -1,16 +1,76 @@
 ---
-
+import "../styles/global.css";
+import Hero from "../components/Hero.astro";
+import Problem from "../components/Problem.astro";
+import Solution from "../components/Solution.astro";
+import HowItWorks from "../components/HowItWorks.astro";
+import Pricing from "../components/Pricing.astro";
+import CTA from "../components/CTA.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Principal -->
+    <title>Automatización de WhatsApp 24/7 | Respuestas Automáticas y Chatbots</title>
+    <meta name="description" content="Automatiza tu WhatsApp y responde a tus clientes 24/7. Incrementa tus ventas con nuestro servicio de chatbot y respuestas automáticas para WhatsApp Business. Configuración rápida y sencilla." />
+    <meta name="keywords" content="automatizacion whatsapp, respuestas automaticas whatsapp, chatbot whatsapp, bot whatsapp, vender por whatsapp, whatsapp business api, autoresponder whatsapp" />
+    <meta name="author" content="WhatsApp Automation" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://whatsappautomation.online/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://whatsappautomation.online/" />
+    <meta property="og:title" content="Automatización de WhatsApp 24/7 | No pierdas más clientes" />
+    <meta property="og:description" content="Responde automáticamente a tus clientes 24/7 aunque estés ocupado. Recupera tu tiempo y aumenta tus ventas con nuestro bot para WhatsApp." />
+    <meta property="og:image" content="https://whatsappautomation.online/og-image.jpg" />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://whatsappautomation.online/" />
+    <meta property="twitter:title" content="Automatización de WhatsApp 24/7 | No pierdas más clientes" />
+    <meta property="twitter:description" content="Responde automáticamente a tus clientes 24/7 aunque estés ocupado. Recupera tu tiempo y aumenta tus ventas con nuestro bot para WhatsApp." />
+    <meta property="twitter:image" content="https://whatsappautomation.online/og-image.jpg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "WhatsApp Automation",
+        "image": "https://whatsappautomation.online/logo.png",
+        "description": "Servicio de automatización de respuestas y chatbots para WhatsApp Business.",
+        "url": "https://whatsappautomation.online",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "PE"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "50",
+          "priceCurrency": "USD",
+          "name": "Plan Básico de Automatización"
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-[#0a0a0a] text-white font-sans antialiased overflow-x-hidden relative selection:bg-green-500/30 selection:text-green-200">
+    <div class="fixed inset-0 z-[-1] h-full w-full bg-[#0a0a0a] bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(34,197,94,0.15),rgba(255,255,255,0))]"></div>
+    <Hero />
+    <Problem />
+    <Solution />
+    <HowItWorks />
+    <Pricing />
+    <CTA />
+  </body>
 </html>
