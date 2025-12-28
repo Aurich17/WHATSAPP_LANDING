@@ -1,0 +1,83 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import FloatingWhatsApp from "../components/FloatingWhatsApp.astro";
+---
+
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- SEO General -->
+    <title>Términos y Condiciones | WhatsApp Automation</title>
+    <meta name="description" content="Términos y condiciones de uso de los servicios de WhatsApp Automation." />
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href="https://whatsappautomation.online/terminos-y-condiciones/" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#0a0a0a] text-white font-sans antialiased overflow-x-hidden relative selection:bg-green-500/30 selection:text-green-200">
+    <Navbar />
+    <div class="fixed inset-0 z-[-1] h-full w-full bg-[#0a0a0a] bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(34,197,94,0.15),rgba(255,255,255,0))]"></div>
+
+    <main class="max-w-4xl mx-auto px-6 py-32">
+      <h1 class="text-4xl md:text-5xl font-bold mb-12 text-center">Términos y Condiciones</h1>
+      
+      <div class="prose prose-invert prose-green max-w-none text-gray-300">
+        <p class="text-lg mb-8">
+          Última actualización: {new Date().toLocaleDateString('es-PE', { year: 'numeric', month: 'long', day: 'numeric' })}
+        </p>
+
+        <h3>1. Aceptación de los Términos</h3>
+        <p>
+          Al acceder y utilizar los servicios de WhatsApp Automation, usted acepta estar legalmente vinculado por estos Términos y Condiciones. Si no está de acuerdo con alguno de estos términos, no debe utilizar nuestros servicios.
+        </p>
+
+        <h3>2. Descripción del Servicio</h3>
+        <p>
+          Proporcionamos servicios de automatización para WhatsApp Business, incluyendo la configuración de chatbots, respuestas automáticas e integraciones mediante la API oficial de WhatsApp Business (Meta).
+        </p>
+
+        <h3>3. Uso Aceptable</h3>
+        <p>
+          Usted se compromete a utilizar nuestros servicios únicamente para fines legales y de acuerdo con las políticas de WhatsApp Business. Está prohibido el uso de nuestros servicios para el envío de spam, mensajes no solicitados o cualquier contenido ilegal.
+        </p>
+
+        <h3>4. Pagos y Facturación</h3>
+        <p>
+          Los servicios se facturan según el plan seleccionado (mensual o anual). Los pagos no son reembolsables, excepto en los casos especificados en nuestra política de garantía. Nos reservamos el derecho de modificar nuestros precios con previo aviso.
+        </p>
+
+        <h3>5. Limitación de Responsabilidad</h3>
+        <p>
+          WhatsApp Automation no será responsable de daños indirectos, incidentales, especiales o consecuentes que surjan del uso o la imposibilidad de uso de nuestros servicios, incluyendo interrupciones causadas por cambios en la API de WhatsApp/Meta.
+        </p>
+
+        <h3>6. Modificaciones</h3>
+        <p>
+          Nos reservamos el derecho de modificar estos términos en cualquier momento. Las modificaciones entrarán en vigor inmediatamente después de su publicación en nuestro sitio web.
+        </p>
+
+        <h3>7. Ley Aplicable</h3>
+        <p>
+          Estos términos se regirán e interpretarán de acuerdo con las leyes de Perú, sin dar efecto a sus principios de conflicto de leyes.
+        </p>
+
+        <h3>8. Contacto</h3>
+        <p>
+          Para cualquier consulta legal o sobre estos términos, contáctenos en: <a href="mailto:info@whatsappautomation.online" class="text-green-400 hover:underline">info@whatsappautomation.online</a>
+        </p>
+      </div>
+    </main>
+
+    <Footer />
+    <FloatingWhatsApp />
+  </body>
+</html>

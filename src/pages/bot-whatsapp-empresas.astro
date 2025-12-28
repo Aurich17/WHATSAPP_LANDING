@@ -1,0 +1,109 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import FloatingWhatsApp from "../components/FloatingWhatsApp.astro";
+import Pricing from "../components/Pricing.astro";
+import CTA from "../components/CTA.astro";
+import FAQ from "../components/FAQ.astro";
+---
+
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- SEO Específico -->
+    <title>Bot de WhatsApp para Empresas | Soluciones Técnicas</title>
+    <meta name="description" content="Implementa un bot de WhatsApp para tu empresa. Automatiza procesos, conecta con tu CRM y escala tus ventas con la API oficial." />
+    <meta name="keywords" content="bot whatsapp empresas, chatbot whatsapp api, robot whatsapp ventas, inteligencia artificial whatsapp" />
+    <meta name="author" content="WhatsApp Automation" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://whatsappautomation.online/bot-whatsapp-empresas/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://whatsappautomation.online/bot-whatsapp-empresas/" />
+    <meta property="og:title" content="Bot de WhatsApp para Empresas | Soluciones Técnicas" />
+    <meta property="og:description" content="Descubre cómo un bot de WhatsApp puede transformar la operativa de tu empresa." />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#0a0a0a] text-white font-sans antialiased overflow-x-hidden relative selection:bg-green-500/30 selection:text-green-200">
+    <Navbar />
+    <div class="fixed inset-0 z-[-1] h-full w-full bg-[#0a0a0a] bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(34,197,94,0.15),rgba(255,255,255,0))]"></div>
+
+    <!-- H1 Hero Section -->
+    <section class="min-h-[60vh] flex items-center justify-center text-center px-6 relative overflow-hidden pt-20">
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-green-500/20 rounded-full blur-[80px] md:blur-[100px] -z-10"></div>
+      
+      <div class="max-w-4xl z-10">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-8 tracking-tight leading-tight">
+          Bot de WhatsApp para <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600">Empresas</span>
+        </h1>
+
+        <p class="text-gray-400 text-base md:text-xl mb-6 max-w-2xl mx-auto leading-relaxed">
+          ¿Tus operaciones crecen más rápido que tu equipo? La solución técnica para escalar operaciones. Integra IA, CRM y flujos complejos.
+        </p>
+
+        <p class="text-green-400 font-semibold text-lg mb-10">
+          Planes desde <span class="text-white text-2xl font-bold">$49/mes</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Contenido Técnico -->
+    <div class="max-w-3xl mx-auto px-6 py-16 space-y-16">
+      
+      <!-- Qué hace un bot -->
+      <section>
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 text-white">¿Qué puede hacer un bot por tu empresa?</h2>
+        <ul class="space-y-4 text-gray-300">
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <span><strong>Calificación de Leads:</strong> Haz preguntas clave para filtrar clientes potenciales antes de pasarlos a un humano.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <span><strong>Agendamiento de Citas:</strong> Conecta con tu calendario y permite reservas automáticas.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-green-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <span><strong>Integración CRM:</strong> Guarda cada conversación y dato relevante en tu sistema de gestión.</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Interlinking -->
+      <div class="bg-white/5 p-8 rounded-2xl">
+        <h3 class="text-xl font-bold text-white mb-4">¿Buscas una solución llave en mano?</h3>
+        <p class="text-gray-400 mb-6">
+          Si necesitas una implementación profesional, revisa nuestras soluciones:
+        </p>
+        <ul class="space-y-3">
+          <li>
+            <a href="/whatsapp-business-automatizado-peru" class="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors">
+              <span class="text-xl">🇵🇪</span> Solución especializada para empresas en Perú &rarr;
+            </a>
+          </li>
+          <li>
+             <a href="/automatizacion-whatsapp/" class="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors">
+              <span class="text-xl">🤖</span> Guía general de automatización &rarr;
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <Pricing />
+    <Footer />
+    <FloatingWhatsApp />
+  </body>
+</html>

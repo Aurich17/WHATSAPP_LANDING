@@ -1,0 +1,85 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import FloatingWhatsApp from "../components/FloatingWhatsApp.astro";
+---
+
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- SEO General -->
+    <title>Política de Privacidad | WhatsApp Automation</title>
+    <meta name="description" content="Política de privacidad de WhatsApp Automation. Conoce cómo protegemos tus datos y tu información." />
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href="https://whatsappautomation.online/politica-de-privacidad/" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#0a0a0a] text-white font-sans antialiased overflow-x-hidden relative selection:bg-green-500/30 selection:text-green-200">
+    <Navbar />
+    <div class="fixed inset-0 z-[-1] h-full w-full bg-[#0a0a0a] bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(34,197,94,0.15),rgba(255,255,255,0))]"></div>
+
+    <main class="max-w-4xl mx-auto px-6 py-32">
+      <h1 class="text-4xl md:text-5xl font-bold mb-12 text-center">Política de Privacidad</h1>
+      
+      <div class="prose prose-invert prose-green max-w-none text-gray-300">
+        <p class="text-lg mb-8">
+          Última actualización: {new Date().toLocaleDateString('es-PE', { year: 'numeric', month: 'long', day: 'numeric' })}
+        </p>
+
+        <h3>1. Información que recopilamos</h3>
+        <p>
+          En WhatsApp Automation, recopilamos información que usted nos proporciona directamente cuando utiliza nuestros servicios, se pone en contacto con nosotros o solicita una demostración. Esto puede incluir:
+        </p>
+        <ul>
+          <li>Nombre y apellidos</li>
+          <li>Número de teléfono (WhatsApp)</li>
+          <li>Dirección de correo electrónico</li>
+          <li>Información sobre su empresa o negocio</li>
+        </ul>
+
+        <h3>2. Uso de la información</h3>
+        <p>
+          Utilizamos la información recopilada para:
+        </p>
+        <ul>
+          <li>Proveer, mantener y mejorar nuestros servicios de automatización.</li>
+          <li>Comunicarnos con usted para responder a sus consultas o proporcionarle asistencia.</li>
+          <li>Enviarle actualizaciones técnicas, alertas de seguridad y mensajes administrativos.</li>
+          <li>Cumplir con nuestras obligaciones legales.</li>
+        </ul>
+
+        <h3>3. Protección de datos</h3>
+        <p>
+          Implementamos medidas de seguridad técnicas y organizativas apropiadas para proteger sus datos personales contra el acceso no autorizado, la alteración, la divulgación o la destrucción.
+        </p>
+
+        <h3>4. Compartir información</h3>
+        <p>
+          No vendemos ni alquilamos su información personal a terceros. Podemos compartir información con proveedores de servicios que nos ayudan a operar nuestro negocio (como proveedores de hosting o herramientas de análisis), siempre bajo estrictos acuerdos de confidencialidad.
+        </p>
+
+        <h3>5. Sus derechos</h3>
+        <p>
+          Usted tiene derecho a acceder, corregir o eliminar su información personal en cualquier momento. Para ejercer estos derechos, por favor contáctenos a través de nuestro correo electrónico o WhatsApp.
+        </p>
+
+        <h3>6. Contacto</h3>
+        <p>
+          Si tiene preguntas sobre esta Política de Privacidad, por favor contáctenos en: <a href="mailto:info@whatsappautomation.online" class="text-green-400 hover:underline">info@whatsappautomation.online</a>
+        </p>
+      </div>
+    </main>
+
+    <Footer />
+    <FloatingWhatsApp />
+  </body>
+</html>

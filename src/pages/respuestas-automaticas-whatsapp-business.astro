@@ -1,0 +1,113 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import FloatingWhatsApp from "../components/FloatingWhatsApp.astro";
+import Pricing from "../components/Pricing.astro";
+import CTA from "../components/CTA.astro";
+import FAQ from "../components/FAQ.astro";
+import Testimonials from "../components/Testimonials.astro";
+---
+
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- SEO Específico -->
+    <title>Respuestas Automáticas WhatsApp Business | Guía Completa</title>
+    <meta name="description" content="Aprende a configurar respuestas automáticas en WhatsApp Business. Mejora tu tiempo de respuesta y no pierdas clientes. Guía paso a paso." />
+    <meta name="keywords" content="respuestas automaticas whatsapp business, mensajes automaticos whatsapp, autorespuesta whatsapp, mensajes bienvenida whatsapp business" />
+    <meta name="author" content="WhatsApp Automation" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://whatsappautomation.online/respuestas-automaticas-whatsapp-business/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://whatsappautomation.online/respuestas-automaticas-whatsapp-business/" />
+    <meta property="og:title" content="Respuestas Automáticas WhatsApp Business | Guía Completa" />
+    <meta property="og:description" content="Configura respuestas automáticas efectivas en WhatsApp Business y aumenta tus conversiones." />
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#0a0a0a] text-white font-sans antialiased overflow-x-hidden relative selection:bg-green-500/30 selection:text-green-200">
+    <Navbar />
+    <div class="fixed inset-0 z-[-1] h-full w-full bg-[#0a0a0a] bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(34,197,94,0.15),rgba(255,255,255,0))]"></div>
+
+    <!-- H1 Hero Section -->
+    <section class="min-h-[60vh] flex items-center justify-center text-center px-6 relative overflow-hidden pt-20">
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-green-500/20 rounded-full blur-[80px] md:blur-[100px] -z-10"></div>
+      
+      <div class="max-w-4xl z-10">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-8 tracking-tight leading-tight">
+          Respuestas Automáticas en <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600">WhatsApp Business</span>
+        </h1>
+
+        <p class="text-gray-400 text-base md:text-xl mb-6 max-w-2xl mx-auto leading-relaxed">
+          ¿Tus clientes esperan demasiado? La clave para mantener a tus clientes felices es la velocidad. Descubre cómo configurar respuestas que venden por ti.
+        </p>
+
+        <p class="text-green-400 font-semibold text-lg mb-10">
+          Planes desde <span class="text-white text-2xl font-bold">$49/mes</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Contenido Educativo -->
+    <div class="max-w-3xl mx-auto px-6 py-16 space-y-16">
+      
+      <!-- Qué son -->
+      <section>
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 text-white">¿Qué son las respuestas automáticas?</h2>
+        <div class="prose prose-invert prose-lg text-gray-400">
+          <p>
+            Las respuestas automáticas son mensajes preconfigurados que se envían instantáneamente cuando un cliente te escribe, dependiendo de ciertas condiciones (horario, primera vez, palabras clave).
+          </p>
+          <p class="mt-4">
+            Son fundamentales para cualquier estrategia de <a href="/automatizacion-whatsapp" class="text-green-400 hover:underline">automatización de WhatsApp</a> moderna.
+          </p>
+        </div>
+      </section>
+
+      <!-- Ejemplos -->
+      <section>
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 text-white">Ejemplos efectivos</h2>
+        <div class="space-y-6">
+          <div class="bg-white/5 p-6 rounded-xl border-l-4 border-green-500">
+            <h3 class="font-bold text-white mb-2">Mensaje de Ausencia</h3>
+            <p class="text-gray-300 italic">"¡Hola! Gracias por escribirnos. En este momento estamos fuera de horario de oficina, pero hemos recibido tu mensaje. Te responderemos mañana a primera hora. Mientras tanto, puedes ver nuestro catálogo aquí: [Enlace]"</p>
+          </div>
+          <div class="bg-white/5 p-6 rounded-xl border-l-4 border-green-500">
+            <h3 class="font-bold text-white mb-2">Mensaje de Bienvenida</h3>
+            <p class="text-gray-300 italic">"¡Bienvenido a [Tu Empresa]! 🚀 ¿En qué podemos ayudarte hoy?
+            1. Ver precios
+            2. Soporte técnico
+            3. Hablar con un asesor"</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Contextual -->
+      <div class="bg-green-900/20 border border-green-500/30 p-8 rounded-2xl text-center">
+        <h3 class="text-xl font-bold text-white mb-4">¿Quieres implementar esto en tu negocio?</h3>
+        <p class="text-gray-400 mb-6">
+          Si estás en Perú, podemos configurar todo esto por ti con nuestro servicio especializado.
+        </p>
+        <a href="/whatsapp-business-automatizado-peru/" class="inline-flex items-center justify-center bg-green-500 hover:bg-green-400 text-black font-bold px-6 py-3 rounded-lg transition-colors">
+          Ver servicio de automatización en Perú
+        </a>
+      </div>
+
+    </div>
+
+    <FAQ />
+    <Footer />
+    <FloatingWhatsApp />
+  </body>
+</html>
